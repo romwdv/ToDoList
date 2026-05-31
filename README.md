@@ -1,16 +1,91 @@
-# React + Vite
+# ✅ ToDoList — Application React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Application de gestion de tâches réalisée dans le cadre d'une formation chez **Le Reacteur**.
+> ⚠️ Il s'agit d'un exercice.
+>
+> - La mise en page n'est pas finalisée.
+> - Pas de backend pour le moment.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📋 Présentation
 
-## React Compiler
+Ce projet est une application de gestion de tâches (To-Do List) construite avec React. Elle permet de :
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Créer** des tâches avec titre, description, date de fin et utilisateur assigné
+- **Filtrer** les tâches par statut (Toutes / Ouvertes / Fermées)
+- **Marquer** une tâche comme terminée via une checkbox
+- **Voir le détail** d'une tâche
+- **Trier** automatiquement les tâches actives en premier
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies utilisées
+
+| Technologie | Usage                                     |
+| ----------- | ----------------------------------------- |
+| React       | Framework UI, gestion des états           |
+| Day.js      | Formatage des dates                       |
+| CSS3        | Styles et mise en page                    |
+| JSON        | Données statiques (couleurs utilisateurs) |
+
+---
+
+## 🗂️ Structure du projet
+
+```
+📁 ToDoList/
+├── 📁 src/
+│   ├── App.jsx
+│   └── 📁 Components/
+│       ├── Tasks.jsx
+│       ├── Form.jsx
+│       ├── Detail.jsx
+│       └── colors.json
+├── 📁 public/
+└── package.json
+```
+
+---
+
+## ⚙️ Fonctionnalités
+
+### Gestion des tâches
+
+- Ajout d'une tâche via un formulaire (titre, description, date de fin, utilisateur)
+- Checkbox pour basculer le statut `active` d'une tâche
+- Tri automatique : les tâches ouvertes apparaissent en premier
+
+### Filtres
+
+| Filtre   | Comportement                       |
+| -------- | ---------------------------------- |
+| Toutes   | Affiche toutes les tâches          |
+| Ouvertes | Affiche uniquement `active: true`  |
+| Fermées  | Affiche uniquement `active: false` |
+
+### Couleurs par utilisateur
+
+Chaque utilisateur se voit attribuer une couleur définie dans `colors.json` et appliquée dynamiquement en className.
+
+---
+
+## 🚀 Lancer le projet en local
+
+```bash
+# Cloner le dépôt
+git clone https://github.com/romwdv/ToDoList.git
+
+# Installer les dépendances
+cd ToDoList
+yarn
+
+# Lancer le projet
+yarn dev
+```
+
+---
+
+## 👤 Auteur
+
+Exercice réalisé par **Romain** dans le cadre de la formation **[Le Reacteur](https://www.lereacteur.io/)**.

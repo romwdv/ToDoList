@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Olivia",
+    "spec": {
+      "color": "green"
+    }
+  },
+  {
+    "name": "Romain",
+    "spec": {
+      "color": "blue"
+    }
+  },
+  {
+    "name": "Andreas",
+    "spec": {
+      "color": "orange"
+    }
+  },
+  {
+    "name": "Romy",
+    "spec": {
+      "color": "violet"
+    }
+  }
+]

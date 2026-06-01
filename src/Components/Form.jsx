@@ -27,6 +27,7 @@ const Form = ({ tableTask, setTableTask, setAddTask }) => {
             });
             setTableTask(newtab);
             setAddTask(false);
+            setTitle("");
           }
         }}
       >

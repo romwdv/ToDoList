@@ -1,6 +1,7 @@
 import daysjs from "dayjs";
 import userSpec from "../Components/colors.json";
 import { useState } from "react";
+import { VscTrash } from "react-icons/vsc";
 
 const Tasks = ({
   tableTask,
@@ -36,6 +37,7 @@ const Tasks = ({
                 <input
                   type="checkbox"
                   id={task.id}
+                  checked={!task.active}
                   className="rounded"
                   onClick={() => {
                     const newtab = tableTask.map((t) =>
@@ -70,6 +72,9 @@ const Tasks = ({
                   }}
                 >
                   Voir détails
+                </span>
+                <span>
+                  <VscTrash />
                 </span>
               </div>
             </li>

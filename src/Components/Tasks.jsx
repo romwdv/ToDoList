@@ -9,7 +9,7 @@ const Tasks = ({
   setTaskdetail,
   setShowDetail,
 }) => {
-  console.log(tableTask);
+  console.log(tableTask.length);
   const [filter, setFilter] = useState(null);
   return (
     <div className="taskList">
@@ -22,6 +22,9 @@ const Tasks = ({
           <h4 onClick={() => setFilter(false)}>Fermées</h4>
         </div>
       </div>
+      {!tableTask.length && (
+        <div className="no-task">Pas de tâche à afficher</div>
+      )}
       <ul>
         {tableTask
           .slice()
